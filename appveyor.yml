@@ -1,4 +1,5 @@
 image: Ubuntu
 
 build_script:
-  - pwsh: Invoke-WebRequest 'https://dot.net/v1/dotnet-install.sh' -OutFile dotnet-install.sh; bash dotnet-install.sh --version 2.1.200
+  - pwsh: Invoke-WebRequest 'https://dot.net/v1/dotnet-install.sh' -OutFile dotnet-install.sh; bash dotnet-install.sh --version 2.1.200; dotnet --version
+  - pwsh: dotnet --version
